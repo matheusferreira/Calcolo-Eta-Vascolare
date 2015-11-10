@@ -1,0 +1,12 @@
+/* Empty. Add your own CSS if you like */
+.banner {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	max-width: 100%;
+}
+
+.card{
+	padding-top: 0px !important;
+	margin-top: 0px !important;
+}

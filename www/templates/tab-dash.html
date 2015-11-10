@@ -1,0 +1,59 @@
+<ion-view view-title="Calcolo">
+  <ion-content class="padding has-tabs">
+    <center><img src="./img/app_banner.png" class="banner"></img></center>
+    <div class="list card ">
+      <div class="item item-body">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Sesso:</span>
+            <div class="row">
+                <div class="col">
+                  <ion-radio ng-model="fields.gender" ng-value="0" name="gender">M</ion-radio>
+                </div>
+                <div class="col">
+                  <ion-radio ng-model="fields.gender" ng-value="1" name="gender">F</ion-radio>
+                </div>
+            </div>
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Età:</span>
+            <input type="tel" placeholder="40" ng-model="fields.age">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Fumatore:</span>
+              <div class="row">
+                  <div class="col">
+                    <ion-radio ng-model="fields.smoking" ng-value="0" name="smoking">Si</ion-radio>
+                  </div>
+                  <div class="col">
+                    <ion-radio ng-model="fields.smoking" ng-value="1" name="smoking">No</ion-radio>
+                  </div>
+              </div>
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Pressione sistolica (mmHg):</span>
+            <input type="tel" placeholder="120" ng-model="fields.systolic">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Colesterolo totale (mg/dl):</span>
+            <input type="tel" placeholder="230" ng-model="fields.cholesterol">
+          </label>
+          <label class="item item-input item-stacked-label" ng-show="warning">
+          <span class="input-label assertive">Si prega di compilare tutti i campi</span>
+          </label>
+          <button class="button button-full button-assertive" ng-click="calculate()">
+            Calcolo età vascolare SCORE
+          </button>
+          <label class="item">
+            <span class="input-label positive">Età vascolare: {{results.vascular}}</span>
+            
+          </label>
+          <label class="item">
+            <span class="input-label assertive">Rischio evento fatale: {{results.risk}}</span>
+          </label>
+
+        </div>
+      </div>
+    </div>
+    
+  </ion-content>
+</ion-view>
