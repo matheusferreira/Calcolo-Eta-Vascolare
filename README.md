@@ -1,12 +1,12 @@
 # Calcolo-Eta-Vascolare
 Ionic application that calculates the vascular age
 
-This app was created as a contribuition for a project of the university of Lucca. 
+This app was created as a contribution for a project of the university of Lucca. 
 [Link to the project](http://sysma.imtlucca.it/vascularage/#form)
 
 <img src="https://github.com/matheusferreira/Calcolo-Eta-Vascolare/blob/master/repository-images/Android%20device%20test.png?raw=true" width="250x">
 
-To build this code and deploy in a Android or iOS device you must follow the [guide from the Ionic platform](http://ionicframework.com/getting-started/) and install it.
+To build this code and deploy it for Android or iOS device you must follow the [guide from the Ionic platform](http://ionicframework.com/getting-started/) and install it.
 
 After Ionic is instaled you can clone this repository and open its path in the terminal and run the following commands:
 ```terminal
@@ -17,7 +17,7 @@ or
 $ ionic platform add android
 ```
 
-You must have the SDKs from each platform configurated in your development enviroment, you can find guides from the Ionic documentation:
+You must have the SDKs from each platform configurated in your development environment, you can find guides from the Ionic documentation:
 [Android Guide](http://cordova.apache.org/docs/en/3.4.0/guide/platforms/android/index.html#Android%20Platform%20Guide) and [iOS Guide](http://cordova.apache.org/docs/en/3.4.0/guide/platforms/ios/index.html#iOS%20Platform%20Guide)
 
 Then you can simulate using the iOS simulator:
